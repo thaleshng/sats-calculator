@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Satoshi e sats/vB</title>
+
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="header-title">
+                <i class="fa-brands fa-bitcoin"></i>
+                <h1>Bitcoin <span>BTC</span></h1>
+            </div>
+            <p id="bitcoin-value"></p>
+        </header>
+
+        <section class="calculators">
+            <div class="calculators-container">
+                <div class="calculator satoshi">
+                    <h2>Calculadora de Satoshi</h2>
+                    <label for="dol">
+                        <input type="number" name="dol" id="dol-satoshi">
+                        <p>$</p>
+                    </label>
+                    <label for="sat">
+                        <input type="number" name="sat" id="sat">
+                        <p>Satoshi</p>
+                    </label>
+
+                    <p class="satoshi-conversion" id="satoshi-conversion"></p>
+
+                    <input type="reset" value="Resetar" id="reset-satoshi">
+                </div>
+    
+                <div class="calculator sat-vb">
+                    <h2>Calculadora de sat/vB</h2>
+                    <label for="dol">
+                        <input type="number" name="dol" id="dol-satvb">
+                        <p>$</p>
+                    </label>
+                    <label for="sat-vb">
+                        <input type="number" name="sat-vb" id="sat-vb">
+                        <p>sat/vB</p>
+                    </label>
+
+                    <p class="satvb-conversion" id="satvb-conversion"></p>
+
+                    <input type="reset" value="Resetar" id="reset-sat-vb">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="./src/js/index.js"></script>
+
+</html>
